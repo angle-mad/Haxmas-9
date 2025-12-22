@@ -1,0 +1,16 @@
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[project]
+name = "haxmas_day_9_angle_mad"
+version = "0.0.1"
+dependencies = [
+    "textual",
+]
+
+[project.scripts]
+advent-calendar = "haxmas_day_9_angle_mad.main:main"
+
+[tool.hatch.build.targets.wheel]
+packages = ["src/haxmas_day_9_angle_mad"]
